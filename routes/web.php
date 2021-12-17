@@ -24,3 +24,19 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/Criarsala', function () {
+    return view('Criarsala');
+});
+Route::get('/PerfilPessoal', function () {
+    return view('PerfilPessoal');
+});
+Route::get('/SalaAdm', function () {
+    return view('SalaAdm');
+});
+Route::get('/SalaParticipante', function () {
+    return view('SalaParticipante');
+});
+Route::get('/Visualizarperfil', function () {
+    return view('Visualizarperfil');
+});
